@@ -17,6 +17,9 @@ class Subject extends Model
     }
 
     public function studentdbsubjects(){
-        return $this->hasMany('App\Studentsubject');
+        return $this->hasMany('App\Studentdbsubject');
     }
+
+
+    
 }

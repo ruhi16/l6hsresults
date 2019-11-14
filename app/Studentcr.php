@@ -20,9 +20,13 @@ class Studentcr extends Model
 
 
 
+
+    public function studentdbsubjects(){
+        return $this->hasMany('App\Studentdbsubject','studentdb_id','studentdb_id');
+    }
+
     public function studentdb(){
         return $this->belongsTo('App\Studentdb');
     }
-
 
 }

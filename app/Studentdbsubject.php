@@ -15,4 +15,13 @@ class Studentdbsubject extends Model
     public function subject(){
         return $this->belongsTo('App\Subject');
     }
+
+    
+
+
+
+    
+    public function studentcr(){
+        return $this->belongsTo('App\Studentcr','studentdb_id','id');
+    }
 }
